@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TicTacToe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="menu">
+        <div class="content">
+            <h1>TicTacToe</h1>
+            <div class="inputs">
+                <div>
+                    <label for="p1name">Player 1:</label>
+                    <input type="text" name="p1name" id="p1name" placeholder="Name">
+                </div>
+                <div>
+                    <label for="p2name">Player 2:</label>
+                    <input type="text" name="p2name" id="p2name" placeholder="Name">
+                </div>
+            </div>
+            <button>Start</button>
+        </div>
+    </div>
+    <div class="game">
+        <div class="result">Hello</div>
+        <div class="content">
+            <h2></h2>
+            <p></p>
+            <div class="buttons">
+                <button class="restart">Restart Game</button>
+                <button class="reset">Reset Board</button>
+            </div>
+            <div class="board">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="scores">
+                <div class="p1Score">
+                    <h4>Player 1</h4>
+                    <p></p>
+                </div>
+                <div class="p2Score">
+                    <h4>Player 2</h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

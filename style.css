@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: "Roboto", sans-serif;
+    font-size: min(calc(12px + 0.5vw), 18px)
+}
+
+h1{
+    font-family: "Quantico", sans-serif;
+    font-style: italic;
+    font-size: 6rem;
+}
+
+body{
+    color: #DDF8E8;
+    height: 100vh;
+    background-color: #343434;
+}
+
+.menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu > .content{
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #494949;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+}
+
+.inputs{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 1.2rem;
+}
+
+.inputs  input{
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #343434;
+    color: #a0b8aa;
+}
+
+.inputs > div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5px;
+}
+
+.menu > .content button{
+    margin-top: 30px;
+    background-color: #048BA8;
+    color: #DDF8E8;
+    border: none;
+    padding: 10px 40px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.menu > .content button:hover{
+    background-color: #02728b;
+}
+
+.game{
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game > .content{
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #494949;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button{
+    background-color: #048BA8;
+    color: #DDF8E8;
+    border: none;
+    padding: 10px 40px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: #02728b;
+}
+
+.board{
+    display: grid;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color:#DDF8E8;
+    gap: 5px;
+}
+
+.box{
+    background-color: #343434;
+    align-content: center;
+    font-size: 100px;
+    font-family: "Montserrat", serif;
+}
+
+.box:empty{
+    cursor: pointer;
+}
+
+.box:empty:hover{
+    background-color: #222222;
+}
+
+.scores{
+    display: flex;
+    gap: 20px;
+}
+
+.scores > div{
+    flex: 1;
+    border-radius: 16px;
+    padding: 10px 0;
+}
+
+.p1Score{
+    background-color: #0F4392;
+}
+
+.p2Score{
+    background-color: #FF4949;
+}
+
+.result{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    align-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    font-family: "Quantico", sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    display: none;
+}
